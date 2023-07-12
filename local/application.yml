@@ -1,0 +1,64 @@
+spring:
+  data:
+    redis:
+      database: 0
+      port: 6379
+      timeout: 30000
+      host: 192.168.121.32
+      username: default
+      password: 12345678x@X
+  cache:
+    type: redis
+    redis:
+      time-to-live: '45000'
+      cache-null-values: 'true'
+  cassandra:
+    username: cassandra
+    password: 12345678x@X
+    local-datacenter: datacenter1
+    request:
+      timeout: 10s
+    port: '9042'
+    connection:
+      init-query-timeout: 10s
+      connect-timeout: 10s
+    contact-points: 192.168.121.29
+  main:
+    allow-bean-definition-overriding: 'true'
+  session:
+    store-type: redis
+    redis:
+      namespace: dev
+    properties:
+      hibernate:
+        id:
+          new_generator_mappings: 'true'
+
+server:
+  http2:
+    enabled: true
+app:
+  greeting: Hello from config file on github updated
+  gateway:
+    domain-name: https://api-dev-soctrip.tma-swerp.com
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: localhost:${server.port}
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:        
+  file:
+    name: application.log
+  level:
+    root: INFO
+    org.springframework: INFO

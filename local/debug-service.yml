@@ -1,0 +1,4 @@
+server:
+  port: 7726
+  servlet:
+    context-path: /debug-service

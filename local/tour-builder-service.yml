@@ -1,0 +1,17 @@
+server:
+  port: 4002
+  servlet:
+    context-path: /tour-builder
+
+spring:
+  cassandra:
+    username: cassandra
+    password: 12345678x@X
+    local-datacenter: datacenter1
+    request:
+      timeout: 10s
+    port: '9042'
+    connection:
+      init-query-timeout: 10s
+      connect-timeout: 10s
+    contact-points: 192.168.121.29

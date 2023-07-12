@@ -1,0 +1,7 @@
+server:
+  port: 8502
+  servlet:
+    context-path: /standard
+spring:
+  cassandra:
+    keyspace-name: standard_space
