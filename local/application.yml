@@ -4,17 +4,15 @@ spring:
       database: 0
       port: 6379
       timeout: 30000
-      host: 192.168.121.32
-      username: default
-      password: 12345678x@X
+      host: localhost
   cache:
     type: redis
     redis:
       time-to-live: '45000'
       cache-null-values: 'true'
   cassandra:
-    username: cassandra
-    password: 12345678x@X
+    username: admin
+    password: A13572468!$
     local-datacenter: datacenter1
     request:
       timeout: 10s
@@ -22,7 +20,7 @@ spring:
     connection:
       init-query-timeout: 10s
       connect-timeout: 10s
-    contact-points: 192.168.121.29
+    contact-points: 103.56.156.132
   main:
     allow-bean-definition-overriding: 'true'
   session:
