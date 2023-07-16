@@ -1,2 +1,10 @@
 server:
   port: 8021
+
+config:
+  routes:
+    -
+      name: USER_OBJECT
+      serviceName: USER-SERVICE
+      endPoint: /users/from-tempt-db/{id}
+      method: GET
