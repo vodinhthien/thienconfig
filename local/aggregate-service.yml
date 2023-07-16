@@ -8,3 +8,4 @@ config:
       serviceName: USER-SERVICE
       endPoint: /users/from-tempt-db/{id}
       method: GET
+      description: Return user object from user id
