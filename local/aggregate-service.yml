@@ -6,7 +6,7 @@ server:
 route-config:
   routes:
     -
-      name: USER_OBJECT
+      objectName: USER_OBJECT
       serviceName: USER-SERVICE
       endPoint: /users/from-tempt-db/{id}
       method: GET
