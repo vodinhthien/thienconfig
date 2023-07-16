@@ -1,1 +1,13 @@
+server:
+  port: 8021
+  servlet:
+    context-path: /data-aggregate
 
+route-config:
+  routes:
+    -
+      objectName: USER_OBJECT
+      serviceName: example-target-aggregate-service
+      endPoint: /example-target-aggregate/data/from-tempt-db/{id}
+      method: GET
+      description: Return user object from user id
