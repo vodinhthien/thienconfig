@@ -3,7 +3,7 @@ server:
   servlet:
     context-path: /aggregate
 
-config:
+route-config:
   routes:
     -
       name: USER_OBJECT
