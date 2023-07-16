@@ -8,6 +8,6 @@ route-config:
     -
       objectName: USER_OBJECT
       serviceName: USER-SERVICE
-      endPoint: /example-target-aggregate/from-tempt-db/{id}
+      endPoint: /example-target-aggregate/data/from-tempt-db/{id}
       method: GET
       description: Return user object from user id
