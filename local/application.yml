@@ -5,7 +5,7 @@ spring:
       port: 6379
       timeout: 30000
       host: 103.56.156.132
-      username: default
+      username: 
       password: 12345678x@X
   cache:
     type: redis
