@@ -4,6 +4,7 @@ spring:
       port: 6379
       timeout: 30000
       host: localhost
+      password:
   cache:
     type: redis
     redis:
