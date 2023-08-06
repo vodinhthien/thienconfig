@@ -6,7 +6,7 @@ server:
 route-config:
   routes:
     -
-      objectName: USER_OBJECT
+      objectName: EXAMPLE_AGGREGATE_OBJECT
       serviceName: example-target-aggregate-service
       endPoint: /example-target-aggregate/data/from-tempt-db/{id}
       method: GET
