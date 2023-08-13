@@ -39,6 +39,7 @@ server:
     enabled: true
 app:
   greeting: Hello from config file on github updated
+  firebase-config-file: soctrip-app-firebase-adminsdk-bek2j-f8eade1bc7.json
   gateway:
     domain-name: https://api-dev-soctrip.tma-swerp.com
 eureka:
@@ -62,3 +63,11 @@ logging:
   level:
     root: INFO
     org.springframework: INFO
+
+server:
+  port: 7402
+  servlet:
+    context-path: /notification
+spring:
+  cassandra:
+    keyspace-name: notification_space
