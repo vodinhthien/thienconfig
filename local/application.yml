@@ -64,10 +64,3 @@ logging:
     root: INFO
     org.springframework: INFO
 
-server:
-  port: 7402
-  servlet:
-    context-path: /notification
-spring:
-  cassandra:
-    keyspace-name: notification_space
