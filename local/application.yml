@@ -20,7 +20,7 @@ spring:
     connection:
       init-query-timeout: 10s
       connect-timeout: 10s
-    contact-points: 127.0.0.1
+    contact-points: localhost
   main:
     allow-bean-definition-overriding: 'true'
   session:
