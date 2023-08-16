@@ -13,8 +13,6 @@ spring:
       time-to-live: '45000'
       cache-null-values: 'true'
   cassandra:
-    username: 
-    password: 
     local-datacenter: datacenter1
     request:
       timeout: 10s
