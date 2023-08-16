@@ -13,8 +13,8 @@ spring:
       time-to-live: '45000'
       cache-null-values: 'true'
   cassandra:
-    username: admin
-    password: A13572468!$
+    username: 
+    password: 
     local-datacenter: datacenter1
     request:
       timeout: 10s
@@ -22,7 +22,7 @@ spring:
     connection:
       init-query-timeout: 10s
       connect-timeout: 10s
-    contact-points: 103.56.156.132
+    contact-points: 127.0.0.1
   main:
     allow-bean-definition-overriding: 'true'
   session:
